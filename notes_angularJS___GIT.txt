@@ -1,0 +1,22 @@
+git init
+git status
+git add octocat.txt
+git status
+git commit -m "Add cute octocat story"
+git add '*.txt'
+git commit -m 'Add all the octocat txt files'
+git log
+git remote add origin https://github.com/try-git/try_git.git  --> create remote and head server
+git push -u origin master		--> command to send files to the remote server
+git pull origin master			--> get files you sent that were recently edited by some members
+git diff HEAD 				--> get the differences of the old and new files
+git add octofamily/octodog.txt 		--> add/commit the file from staged option(where files are placed ready to be committed)
+git diff --staged   			--> see changes that were staged
+git reset octofamily/octodog.txt 	--> remove the file
+git checkout -- octocat.txt 		--> get rid of all the changes since the last commit for octocat.txt
+git branch clean_up			--> create a branch called clean_up(copy or branch of the file when editing a feature or bug)
+git checkout clean_up			--> switch branches using the git checkout <branch> command
+git rm '*.txt'				--> remove all those pesky octocats by using the git rm command which will not only remove the actual files from disk, but will also stage the removal of the files for us.
+git commit -m "Remove all the cats"	--> commit changes after removing all the cats
+git branch -d <branch name> 		--> to delete a branch
+git push				--> push everything you've been working on to your remote repository
